@@ -2,7 +2,7 @@ name: Generate GitHub Contributions
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 0 * * *'  # Run the workflow daily
 
 jobs:
   generate:
@@ -11,11 +11,16 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Generate GitHub Contributions SVG
-        uses: Platane/snk@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          github_user_name: your_github_username
-          outputs: dist/github-contribution-grid-snake.svg
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install -g github-contributions-generator
+
+      - name: Generate GitHub Contributions SVG
+        run: github-contributions-generator -u gauravrathod802 -o dist/github-contribution-grid-snake.svg
 
       - name: Push SVG to Output Branch
         run: |
