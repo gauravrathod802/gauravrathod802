@@ -1,9 +1,14 @@
-name: generate-animation
+name: generate
 
 on:
+  # Run automatically every 12 hours
   schedule:
     - cron: "0 */12 * * *"
+
+  # Allows manual run of the job at any time
   workflow_dispatch:
+
+  # Run on every push to the main branch
   push:
     branches:
       - main
@@ -16,21 +21,25 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          fetch-depth: 1
+          node-version: '14'
+
+      - name: Install Dependencies
+        run: |
+          npm install -g github-contributions-generator
+          npm install
 
       - name: Generate GitHub Contributions SVG
-        uses: Platane/snk@master
-        with:
-          github_user_name: gauravrathod802
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+        run: |
+          npx github-contributions-generator -u gauravrathod802 -c 20 -g '#1A1A1A' -o dist/github-contribution-grid-snake.svg
 
       - name: Push SVG to Output Branch
         run: |
           mkdir -p dist
-          mv github-contribution-grid-snake.svg dist/
+          mv dist/github-contribution-grid-snake.svg dist/
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor }}@users.noreply.github.com"
           git add dist/
