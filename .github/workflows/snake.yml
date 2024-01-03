@@ -27,9 +27,12 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Install Dependencies
+      - name: Download github-contributions-generator
         run: |
-          npm install github-contributions-generator@1.17.0
+          curl -o github-contributions-generator.tar.gz -L https://github.com/Ashutosh00710/github-contributions-generator/tarball/main
+          tar -xzf github-contributions-generator.tar.gz
+          mv Ashutosh00710-github-contributions-generator-* github-contributions-generator
+          cd github-contributions-generator
           npm install
 
       - name: Generate GitHub Contributions SVG
