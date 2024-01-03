@@ -24,16 +24,20 @@
  
 <h2 align="center">⚒️ Languages-Frameworks-Tools ⚒️</h2>
 <br/>
+<br/>
 <div align="center">
     <img src="https://skillicons.dev/icons?i=react,bootstrap,html,css,vscode,github,git" />
     <img src="https://skillicons.dev/icons?i=java,javascript,mysql" /><br>
 </div>
+<br/>
+<br/>
+<hr/>
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=gauravrathod802&show_icons=true&locale=en" alt="gauravrathod802" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=gauravrathod802&" alt="gauravrathod802" /></p>
 
-
+<hr/>
 
 <div align="center">
   <h2>🐍 My Contributions 🐍</h2>
