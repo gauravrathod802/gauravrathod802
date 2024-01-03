@@ -21,8 +21,8 @@ jobs:
         run: |
           mkdir -p dist
           mv github-contribution-grid-snake.svg dist/
-          git config user.name "your_github_username"
-          git config user.email "your_email@example.com"
+          git config user.name "gauravrathod802"
+          git config user.email "gauravrathod802@gmail.com"
           git add dist/
           git commit -m "Update GitHub Contributions SVG"
           git push origin output
