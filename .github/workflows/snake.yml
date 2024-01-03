@@ -1,40 +1,28 @@
-name: GitHub Contributions Snake
+name: Generate GitHub Contributions
 
 on:
-  workflow_run:
-    workflows: ["Generate GitHub Contributions Snake"]
-    types:
-      - completed
+  schedule:
+    - cron: '0 0 * * *'
 
 jobs:
   generate:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-
-      - name: Cache node modules
-        uses: actions/cache@v2
-        with:
-          path: |
-            ~/.npm
-            ~/.cache
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-
-      - name: Install dependencies
-        run: npm install
-
       - name: Generate GitHub Contributions SVG
-        run: npm run generate
+        uses: Platane/snk@v2
+        with:
+          github_user_name: your_github_username
+          outputs: dist/github-contribution-grid-snake.svg
 
       - name: Push SVG to Output Branch
-        run: npm run push
-
-      - name: Complete job
-        run: echo "Job complete"
+        run: |
+          mkdir -p dist
+          mv github-contribution-grid-snake.svg dist/
+          git config user.name "your_github_username"
+          git config user.email "your_email@example.com"
+          git add dist/
+          git commit -m "Update GitHub Contributions SVG"
+          git push origin output
