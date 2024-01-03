@@ -18,23 +18,22 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 1
-      
-      - name: Generate GitHub Contributions SVG
-        id: generate-svg
-        uses: Platane/snk/svg-only@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          github_user_name: gauravrathod802
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Generate GitHub Contributions SVG
+        run: node generate-svg.js
 
       - name: Debug Output
         run: |
           ls -la dist/
           cat dist/github-contribution-grid-snake.svg
-          cat dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-          echo "Action outputs:"
-          env | grep GITHUB_ACTIONS
 
       - name: Push SVG to Output Branch
         uses: crazy-max/ghaction-github-pages@v2.6.0
