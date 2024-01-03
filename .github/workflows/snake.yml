@@ -41,7 +41,12 @@ jobs:
         run: npm install
 
       - name: Generate GitHub Contributions SVG
-        run: npx github-contributions-generator
+        uses: Platane/snk@master
+        with:
+          github_user_name: gauravrathod802
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
       - name: Push SVG to Output Branch
         run: |
