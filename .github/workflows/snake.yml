@@ -15,7 +15,7 @@ jobs:
     
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2  # Updated to the latest version
+        uses: actions/checkout@v2
         with:
           fetch-depth: 1
       
@@ -41,3 +41,7 @@ jobs:
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Print GitHub Actions Context
+        run: |
+          env
