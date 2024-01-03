@@ -9,9 +9,7 @@
   "license": "ISC",
   "dependencies": {
     "github-contributions-generator": "^1.17.0"
-    // Add other dependencies as needed
   },
   "devDependencies": {
-    // Add your development dependencies as needed
   }
 }
