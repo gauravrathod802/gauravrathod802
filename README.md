@@ -33,9 +33,12 @@
 <br/>
 <hr/>
 
+
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=gauravrathod802&show_icons=true&locale=en" alt="gauravrathod802" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=gauravrathod802&" alt="gauravrathod802" /></p>
+
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=gauravrathod802&show_icons=true&locale=en&layout=compact" alt="gauravrathod802" /></p>
 
 <hr/>
 
