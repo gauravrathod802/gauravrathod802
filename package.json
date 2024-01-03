@@ -8,7 +8,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "github-contributions-generator": "Ashutosh00710/github-contributions-generator#main",
+    "github-contributions-generator": "Ashutosh00710/github-contributions-generator#main"
   },
   "devDependencies": {
   }
