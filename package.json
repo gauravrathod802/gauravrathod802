@@ -1,0 +1,10 @@
+{
+  "name": "github-contributions-generator",
+  "version": "1.0.0",
+  "scripts": {
+    "install": "npm install"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
