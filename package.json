@@ -8,7 +8,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-        "github-contributions-generator": "https://github.com/Ashutosh00710/github-contributions-generator/tarball/main"
+    "github-contributions-generator": "Ashutosh00710/github-contributions-generator#main",
   },
   "devDependencies": {
   }
