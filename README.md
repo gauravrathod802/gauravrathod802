@@ -46,6 +46,9 @@
   <h2>🐍 My Contributions 🐍</h2>
   <br>
   <!---<img alt="snake eating my contributions" src="https://raw.githubusercontent.com/salesp07/salesp07/output/github-contribution-grid-snake.svg" />--->
+      <img alt="snake eating my contributions" src="https://github.com/gauravrathod802/gauravrathod802/blob/output/github-contribution-grid-snake.gif" />
+
+ <!--- ![snake gif](https://github.com/gauravrathod802/gauravrathod802/blob/output/github-contribution-grid-snake.gif) --->
   
   <br/><br/><br/>
 </div>
