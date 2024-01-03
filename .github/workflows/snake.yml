@@ -27,11 +27,11 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Install Dependencies and Generate GitHub Contributions SVG
-        run: |
-          cd github-contributions-generator
-          npm install
-          npx github-contributions-generator -u gauravrathod802 -c 20 -g '#1A1A1A' -o dist/github-contribution-grid-snake.svg
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Generate GitHub Contributions SVG
+        run: npx github-contributions-generator -u gauravrathod802 -c 20 -g '#1A1A1A' -o dist/github-contribution-grid-snake.svg
 
       - name: Push SVG to Output Branch
         run: |
