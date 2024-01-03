@@ -19,6 +19,9 @@ jobs:
         with:
           fetch-depth: 1
 
+      - name: Clear npm cache
+        run: npm cache clean -f
+
       - name: Cache Node Modules
         uses: actions/cache@v2
         with:
