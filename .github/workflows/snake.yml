@@ -1,8 +1,10 @@
 name: Generate GitHub Contributions
 
 on:
-  schedule:
-    - cron: '0 0 * * *'  # Run the workflow daily
+  workflow_run:
+    workflows: ["Schedule"]
+    types:
+      - completed
 
 jobs:
   generate:
@@ -20,14 +22,12 @@ jobs:
         run: npm install -g github-contributions-generator
 
       - name: Generate GitHub Contributions SVG
-        run: github-contributions-generator -u gauravrathod802 -o dist/github-contribution-grid-snake.svg
+        run: github-contributions-generator -u gauravrathod802 -o github-contribution-grid-snake.svg
 
-      - name: Push SVG to Output Branch
+      - name: Commit and push SVG
         run: |
-          mkdir -p dist
-          mv github-contribution-grid-snake.svg dist/
           git config user.name "gauravrathod802"
           git config user.email "gauravrathod802@gmail.com"
-          git add dist/
+          git add github-contribution-grid-snake.svg
           git commit -m "Update GitHub Contributions SVG"
-          git push origin output
+          git push
