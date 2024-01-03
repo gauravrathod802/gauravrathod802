@@ -20,7 +20,9 @@
 <a href="https://portfolio-gaurav-rathod.netlify.app/" target="blank"><img align="center" src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white" alt="" height="30" width="90" /></a>
 <a href="mailto:gauravrathod.sknsits.comp@gmail.com" target="blank"><img align="center" src="https://img.shields.io/badge/Gmail-333333?style=for-the-badge&logo=gmail&logoColor=red" alt="" height="30" width="70" /></a>
 </p>
+<br/>
  <hr/>
+ <br/>
  
 <h2 align="center">⚒️ Languages-Frameworks-Tools ⚒️</h2>
 <br/>
@@ -32,6 +34,7 @@
 <br/>
 <br/>
 <hr/>
+<br/>
 <div align="center">
   <h2>🐍 My Contributions 🐍</h2>
   <br>
