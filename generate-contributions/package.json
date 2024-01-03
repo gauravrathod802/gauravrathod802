@@ -1,0 +1,16 @@
+{
+  "name": "generate-contributions",
+  "version": "1.0.0",
+  "scripts": {
+    "generate": "node generate.js",
+    "push": "echo 'Push SVG to Output Branch'",
+    "test": "echo 'No tests defined'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "github-contributions-generator": "^1.17.0"
+  },
+  "devDependencies": {}
+}
