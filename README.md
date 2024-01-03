@@ -32,25 +32,17 @@
 <br/>
 <br/>
 <hr/>
-
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=gauravrathod802&show_icons=true&locale=en" alt="gauravrathod802" /></p>
-
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=gauravrathod802&" alt="gauravrathod802" /></p>
-
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=gauravrathod802&show_icons=true&locale=en&layout=compact" alt="gauravrathod802" /></p>
-
-<hr/>
-
 <div align="center">
   <h2>🐍 My Contributions 🐍</h2>
   <br>
-  <!---<img alt="snake eating my contributions" src="https://raw.githubusercontent.com/salesp07/salesp07/output/github-contribution-grid-snake.svg" />--->
       <img alt="snake eating my contributions" src="https://github.com/gauravrathod802/gauravrathod802/blob/output/github-contribution-grid-snake.svg" />
-
- <!--- ![snake gif](https://github.com/gauravrathod802/gauravrathod802/blob/output/github-contribution-grid-snake.gif) --->
-  
+  <hr/>
   <br/><br/><br/>
 </div>
 
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=gauravrathod802&show_icons=true&locale=en" alt="gauravrathod802" /></p>
+
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=gauravrathod802&show_icons=true&locale=en&layout=compact" alt="gauravrathod802" /><span><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=gauravrathod802&" alt="gauravrathod802" /></span></p>
+<br/>
 <hr/>
+
