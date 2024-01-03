@@ -1,53 +1,40 @@
-name: generate
+name: GitHub Contributions Snake
 
 on:
-  # Run automatically every 12 hours
-  schedule:
-    - cron: "0 */12 * * *"
-
-  # Allows manual run of the job at any time
-  workflow_dispatch:
-
-  # Run on every push to the main branch
-  push:
-    branches:
-      - main
+  workflow_run:
+    workflows: ["Generate GitHub Contributions Snake"]
+    types:
+      - completed
 
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: 16
 
-      - name: Cache Node.js modules
+      - name: Cache node modules
         uses: actions/cache@v2
         with:
           path: |
             ~/.npm
+            ~/.cache
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: npm install
 
       - name: Generate GitHub Contributions SVG
-        run: npx github-contributions-generator -u gauravrathod802 -c 20 -g '#1A1A1A' -o dist/github-contribution-grid-snake.svg
+        run: npm run generate
 
       - name: Push SVG to Output Branch
-        run: |
-          mkdir -p dist
-          mv dist/github-contribution-grid-snake.svg dist/
-          git config user.name "${{ github.actor }}"
-          git config user.email "${{ github.actor }}@users.noreply.github.com"
-          git add dist/
-          git commit -m "Update GitHub Contributions SVG"
-          git push origin output
+        run: npm run push
+
+      - name: Complete job
+        run: echo "Job complete"
