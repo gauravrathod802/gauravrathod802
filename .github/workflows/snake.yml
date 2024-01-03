@@ -19,27 +19,6 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Clear npm cache
-        run: npm cache clean -f
-
-      - name: Cache Node Modules
-        uses: actions/cache@v2
-        with:
-          path: |
-            node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-            ${{ runner.os }}-
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '14'
-
-      - name: Install Dependencies
-        run: npm install
-
       - name: Generate GitHub Contributions SVG
         uses: Platane/snk@master
         with:
