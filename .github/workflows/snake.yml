@@ -1,33 +1,29 @@
-name: Generate GitHub Contributions
+name: Generate Snake
 
 on:
-  workflow_run:
-    workflows: ["Schedule"]
-    types:
-      - completed
+  schedule:
+    - cron: "0 */6 * * *"
+
+workflow_dispatch:
 
 jobs:
-  generate:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - uses: Platane/snk@master
+        id: snake-gif
         with:
-          node-version: '14'
+          github_user_name: gauravrathod802
+          gif_out_path: dist/github-contribution-grid-snake.gif
+          svg_out_path: dist/github-contribution-grid-snake.svg
 
-      - name: Install dependencies
-        run: npm install -g github-contributions-generator
-
-      - name: Generate GitHub Contributions SVG
-        run: github-contributions-generator -u gauravrathod802 -o github-contribution-grid-snake.svg
-
-      - name: Commit and push SVG
+      - name: Commit and push changes
         run: |
           git config user.name "gauravrathod802"
           git config user.email "gauravrathod802@gmail.com"
-          git add github-contribution-grid-snake.svg
-          git commit -m "Update GitHub Contributions SVG"
+          git add dist/
+          git commit -m "Update GitHub Contributions"
           git push
