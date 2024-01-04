@@ -5,11 +5,11 @@
 
 <h3 align="center">A passionate Web developer from India</h3>
 
-- 🌱 I’m currently learning **React**
+- 🌱 I’m currently learning **REACT**
 
 - 👨‍💻 All of my projects are available at [here](https://portfolio-gaurav-rathod.netlify.app/)
 
-- 💬 Ask me about **Java, React, Sql**
+- 💬 Ask me about **JAVA, REACT, SQL**
 
 - 📫 How to reach me **gauravrathod802@gmail.com**
 
@@ -43,7 +43,7 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=gauravrathod802&show_icons=true&locale=en" alt="gauravrathod802" /></p>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=gauravrathod802&show_icons=true&locale=en&layout=compact" alt="gauravrathod802" /><span><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=gauravrathod802&" alt="gauravrathod802" /></span></p>
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=gauravrathod802&" alt="gauravrathod802" /></p>
 <br/>
 <hr/>
 
