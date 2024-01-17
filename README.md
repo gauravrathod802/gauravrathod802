@@ -5,7 +5,7 @@
 
 <h3 align="center">A passionate Web developer from India</h3>
 
-- 🌱 I’m currently learning **REACT5**
+- 🌱 I’m currently learning **REACT**
 
 - 👨‍💻 All of my projects are available at [here](https://portfolio-gaurav-rathod.netlify.app/)
 
