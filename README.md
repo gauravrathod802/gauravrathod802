@@ -15,7 +15,7 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://linkedin.com/in/https://www.linkedin.com/in/gaurav-rathod-295547213/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/gaurav-rathod-295547213/" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/gaurav-rathod-9825372a9/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/gaurav-rathod-295547213/" height="30" width="40" /></a>
 <a href="https://www.hackerrank.com/https://www.hackerrank.com/profile/gauravrathod802" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="https://www.hackerrank.com/profile/gauravrathod802" height="30" width="40" /></a>
 <a href="https://portfolio-gaurav-rathod.netlify.app/" target="blank"><img align="center" src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white" alt="" height="30" width="90" /></a>
 <a href="mailto:gauravrathod.sknsits.comp@gmail.com" target="blank"><img align="center" src="https://img.shields.io/badge/Gmail-333333?style=for-the-badge&logo=gmail&logoColor=red" alt="" height="30" width="70" /></a>
